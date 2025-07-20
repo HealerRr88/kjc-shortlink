@@ -1,0 +1,11 @@
+.user{
+  width: 250px !important;
+}
+
+.avatar{
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid burlywood;
+}

@@ -1,0 +1,10 @@
+.login{
+    background-image: url('../../assets/images/background.webp');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
