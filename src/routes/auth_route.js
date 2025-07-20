@@ -10,20 +10,21 @@ const AuthRoute = ({ children }) => {
 
   useEffect(() => {
     const token = localStorage.getItem(TOKEN_NAME);
+    const verifyLogedInUser = async () => {
+      try {
+        await verify();
+      } catch (error) {
+        return navigate('/login', { replace: true, state: { path: location.pathname } });
+      }
+    };
+
     if (!token) {
       return navigate('/login', { replace: true, state: { path: location.pathname } });
     }
+
     setAuthorization(token);
     verifyLogedInUser();
-  }, [])
-
-  const verifyLogedInUser = async () => {
-    try {
-      await verify();
-    } catch (error) {
-      return navigate('/login', { replace: true, state: { path: location.pathname } });
-    }
-  }
+  }, [location.pathname, navigate]);
 
   return children;
 };
