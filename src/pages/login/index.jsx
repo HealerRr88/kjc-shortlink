@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 import { RR88_SHORTLINK_USER, TOKEN_NAME } from "../../utilities/constants";
 import { setAuthorization } from "../../services/axios_client";
-import logo from '../../assets/images/logo.webp';
+import logo from '../../assets/images/Logo-KJC.png';
 import styles from "./style.module.css";
 
 const LoginPage = () => {

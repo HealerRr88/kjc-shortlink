@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom';
-import logo from '../../assets/images/logo.webp'
+import logo from '../../assets/images/Logo-KJC.png'
 import Menu from '../menu';
 import { RR88_SHORTLINK_USER } from '../../utilities/constants';
 
